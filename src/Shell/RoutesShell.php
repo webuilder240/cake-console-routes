@@ -31,10 +31,14 @@ class RoutesShell extends Shell
                 $outputMethod = 'GET';
             }
             $uriPattern = $route->template;
-            $this->out(
-                sprintf($formatter,$outputMethod,$uriPattern,$route->defaults['controller'],$route->defaults['action'])
-            );
-            $this->hr();
+
+			//そもそもControllerが定義されていないものに関しては表示しないようにしている。
+			if (isset($route->defaults['controller'])){
+				$this->out(
+					sprintf($formatter,$outputMethod,$uriPattern,$route->defaults['controller'],$route->defaults['action'])
+				);
+				$this->hr();
+			}
         }
     }
 
