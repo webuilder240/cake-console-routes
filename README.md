@@ -60,4 +60,4 @@ Path: /Users/nick/myproject/cake3-controller-test-sample/src/
  - check Plugin Routes
  
 ## About this plugin infomation (Japanese)
-[http://webuilder240.github.io/cake-console-routes](http://webuilder240.github.io/cake-console-routes)
+[http://webuilder240.github.io/2015/07/cake-console-routes/](http://webuilder240.github.io/2015/07/cake-console-routes/)
