@@ -33,30 +33,19 @@ bin/cake routes
 ## Example
 
 ``` bash
-Welcome to CakePHP v3.0.9 Console
----------------------------------------------------------------
-App : src
-Path: /Users/nick/myproject/cake3-controller-test-sample/src/
----------------------------------------------------------------
-         Method          URI Pattern       Controller/Action
----------------------------------------------------------------
-            GET                    /            Pages/display
----------------------------------------------------------------
-            GET        /api/v1/posts            Posts/index
----------------------------------------------------------------
-           POST        /api/v1/posts            Posts/add
----------------------------------------------------------------
-            GET    /api/v1/posts/:id            Posts/view
----------------------------------------------------------------
-      PUT,PATCH    /api/v1/posts/:id            Posts/edit
----------------------------------------------------------------
-         DELETE    /api/v1/posts/:id            Posts/delete
----------------------------------------------------------------
+Airnick:cake3-controller-test-sample nick$ bin/cake routes
+         Method  URI Pattern           Controller/Action     extensions
+            GET  /                     Pages/display         none
+            GET  /api/v1/posts         Posts/index           json,xml
+           POST  /api/v1/posts         Posts/add             json,xml
+            GET  /api/v1/posts/:id     Posts/view            json,xml
+      PUT,PATCH  /api/v1/posts/:id     Posts/edit            json,xml
+         DELETE  /api/v1/posts/:id     Posts/delete          json,xml
 ```
 
 ## Todo
  - remove config/routes.php
- - check route extensions
+ - ~~check route extensions~~
  - check Plugin Routes
  
 ## About this plugin infomation (Japanese)
